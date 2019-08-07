@@ -1,5 +1,5 @@
 # Marketday
-**Python scrpit to record sales at market**
+**Python scrpit to record sales at market** <br>
 This will save a .txt file of all the items sold when the program is run.
 The list will be overwritten everytime the program is opened. 
 
