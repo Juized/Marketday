@@ -1,0 +1,55 @@
+WindowManager:
+    MainWindow:
+    SecondWindow:
+    ThirdWindow:
+
+<MainWindow>:
+    name:"main"
+    GridLayout:
+        cols:1
+        size:root.width, root.height
+        button:
+
+        Grid  Layout:
+            cols:2
+            Label:
+                text:
+
+
+
+<SecondWindow>:
+    name: "second"
+<ThirdWindow>:
+    name: "third"
+<FourthWindow>:
+    name: "fourth"
+    Button:
+        Text:"Go Back"
+    <MyGrid>:
+        item: item
+        price: price
+        GridLayout:
+            cols:1
+            size:root.width, root.height
+
+            GridLayout:
+                cols:2
+
+                Label:
+                    text: "What is the name/description of the product? "
+
+                TextInput:
+                    id:item
+                    multiline:False
+
+                Label:
+                    text:"How much did you sell it for?  "
+
+                TextInput:
+                    id:price
+                    multiline:False
+
+            Button:
+                text: "Submit:"
+                on_press:root.button()
+
